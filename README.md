@@ -13,10 +13,9 @@ Sentiment Analysis for Great Clips Reviews Online
 ├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
 ├── README.md          <- The top-level README for those viewing this project.
 ├── data (not included in public repository)
-│   ├── raw/external       <- Data from third party sources.
+│   ├── raw/external   <- Data from third party sources/Original immutable data
 │   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
+│   └── processed      <- The final, canonical data sets for modeling.
 │
 ├── docs               <- A default mkdocs project; see www.mkdocs.org for details
 │
