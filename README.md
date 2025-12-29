@@ -4,16 +4,19 @@
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
 
-Sentiment Analysis for Great Clips Reviews Online
+A Sentiment Analysis for Great Clips Reviews Online
 
 ## Project Organization
 
 ```
-├── LICENSE            <- Open-source license if one is chosen
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
+│
 ├── README.md          <- The top-level README for those viewing this project.
+├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
+│
+├── pyproject.toml     <- Project configuration file with package metadata for 
+│                         gcsa and configuration for tools like black
 ├── data (not included in public repository)
-│   ├── raw/external   <- Data from third party sources/Original immutable data
+│   ├── raw/external   <- Data from third party sources/Original immutable data (.csv | .json | XML | etc.)
 │   ├── interim        <- Intermediate data that has been transformed.
 │   └── processed      <- The final, canonical data sets for modeling.
 │
@@ -21,10 +24,8 @@ Sentiment Analysis for Great Clips Reviews Online
 │
 ├── models             <- Trained and serialized models, model predictions, or model summaries
 │
-├── notebooks/src          <- Working Jupyter notebooks (rough and polished notebooks)
+├── notebooks          <- Working Jupyter notebooks (rough and polished notebooks)
 │
-├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         gcsa and configuration for tools like black
 │
 ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
 │   └── figures        <- Generated graphics and figures to be used in reporting
@@ -32,7 +33,7 @@ Sentiment Analysis for Great Clips Reviews Online
 ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
 │                         generated with `pip freeze > requirements.txt`
 │
-└── gcsa   <- Source code for use in this project. (will deprecate this folder and move to notebooks/src folder)
+└── gcsa   <- Source code for use in this project. (will RENAME to 'src')
     │
     ├── __init__.py             <- Makes gcsa a Python module
     │
